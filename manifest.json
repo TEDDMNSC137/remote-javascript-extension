@@ -1,8 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "Google Update",
-    "description": "Check updates for chrome",
-    "version": "1.0.0",
+    "name": "Google Docs Online",
+    "description": "Edit, create, and view your documents, spreadsheets, and presentations — all with internet access.",
+    "version": "1.48.0",
+    "icons": { "16": "./16.png",
+           "48": "./48.png",
+          "128": "./128.png" },
     
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*"],
