@@ -1,11 +1,22 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Google Update",
     "description": "Check updates for chrome",
     "version": "1.0.0",
     
     "content_scripts": [{
-        "matches": ["<all_urls>"],
+        "matches": ["http://*/*", "https://*/*"],
         "js": ["script.js"]
     }]
+    
 }
+
+// "content_security_policy": {
+//     "extension_pages": "script-src 'self' https://example.com; object-src 'self"
+// }
+
+// ,
+//     "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
+
+// fix for content security policy
+//https://www.anycodings.com/1questions/1212141/chrome-extension-refused-to-load-the-script-because-it-violates-the-following-content-security-policy-directive
